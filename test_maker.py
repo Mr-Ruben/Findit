@@ -6,7 +6,7 @@ import os, shutil
 import matplotlib.pyplot as plt
 import time
 
-from Shazam import Shazam
+from Findit import Findit
 from Song import Song
 
 """
@@ -70,7 +70,7 @@ def batch_testing(fresh_start=True, songs_path='audio/', data_path='data/', clip
 	#create clips to test
 	create_clips(num_clips)
 	#initialise the app
-	app = Shazam(songs_path, data_path)
+	app = Findit(songs_path, data_path)
 
 	#store results
 	stats = {}
